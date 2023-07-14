@@ -1,16 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2gkjnMgAzfTa5E91hBjx47HFqsS3PkwIWcO683efLwzOdFjqE8ez8tddAUcPZt/GWKf9TYaUvI88S725zsMDCQ==",
+  "dgSpecHash": "agbTkYjT94aUSOxkswd6dkv+kL6KNqoBy8gjb+y/jDQyLbUMkBP8u21zn+w2N75OgU+sjQk5p4sC860uwIAS1g==",
   "success": true,
   "projectFilePath": "C:\\Users\\rayro\\source\\repos\\TestProyTDD\\NextPermutation\\NextPermutation.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\rayro\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
-    "C:\\Users\\rayro\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
-    "C:\\Users\\rayro\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
-    "C:\\Users\\rayro\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
-    "C:\\Users\\rayro\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
-    "C:\\Users\\rayro\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "C:\\Users\\rayro\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
