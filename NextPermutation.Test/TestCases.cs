@@ -1,7 +1,5 @@
 namespace NextPermutation.Test;
 
-using System.Reflection;
-using Microsoft.VisualStudio.TestPlatform.Common.Interfaces;
 using NextPermutation;
 using Xunit;
 
@@ -19,7 +17,8 @@ public class TestCases
     public void GetNextPermutation_AnsShouldHaveSameElements(int[] nums1, int[] nums2)
     {
                 _permutationClass_obj.GetNextPermutation(nums1);
-                Assert.True(Enumerable.SequenceEqual(nums1, nums2), $"The answer for {string.Join(",", nums1)} should be {string.Join(",", nums2)}");
+                Assert.True(Enumerable.SequenceEqual(nums1, nums2), 
+                $"The answer for {string.Join(",", nums1)} should be {string.Join(",", nums2)}");
     }
     
     public static IEnumerable<object[]> Data(){
