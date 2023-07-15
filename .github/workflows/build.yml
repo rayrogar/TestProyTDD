@@ -1,0 +1,52 @@
+
+
+name: CI workflow build and test the code
+
+#Triggers the workflow
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    strategy:
+      matrix:
+        configuration: [Debug, Release]
+        SO: [ubuntu-latest, windows-latest, macOS-latest] 
+    
+    #Runners, 
+    runs-on: ${{matrix.SO}}
+                         
+    
+    # Setup Environment
+    env:
+      Solution_Name: TestProyTDD.sln                        
+      Test_Project_Path: NextPermutation.Test\NextPermutation.Test.csproj
+      Dll_Project_Path: NextPermutation\NextPermutation.csproj
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    # Setup .NET
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+    - name: Display dotnet version
+      run: dotnet --version
+      
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    
+    # Execute all unit tests in the solution
+    - name: Execute unit tests
+      run: dotnet test
