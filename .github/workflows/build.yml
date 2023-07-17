@@ -23,10 +23,10 @@ jobs:
                          
     
     # Setup Environment
-    env:
-      Solution_Name: TestProyTDD.sln                        
-      Test_Project_Path: NextPermutation.Test\NextPermutation.Test.csproj
-      Dll_Project_Path: NextPermutation\NextPermutation.csproj
+    #env:
+     #Solution_Name: TestProyTDD.sln                        
+     #Test_Project_Path: NextPermutation.Test\NextPermutation.Test.csproj
+     #Dll_Project_Path: NextPermutation\NextPermutation.csproj
 
     steps:
     - name: Checkout
